@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    
+    
+    , initial-scale=1.0">
+    <title>Esercitazione del 14-11-2023</title>
+</head>
+<body>
+
+   node
+<script>
+
+
+        let contoCorrente = 1500;
+
+        let operazione = parseInt(prompt("Buonasera, benvenuto in banca sella.\n\nPremi 1 per fare bonifico\n\nPremi 2 per fare prelievo"))
+
+        let importo = parseInt(prompt("Inserisci l'importo dell'operazione: "))
+
+        switch (operazione) {
+            case 1:
+
+                if (contoCorrente - importo >= 0) {
+                    let destinatario = prompt("Inserisca l'IBAN del destinatario: ")
+                    contoCorrente = contoCorrente - importo;
+
+                    alert("Il bonifico è andato a buon fine a queste coordinate " + destinatario + " torni a trovarci")
+
+                    alert("Il saldo attuale è adesso di " + contoCorrente + " euro")
+                } else {
+                    alert("Saldo insufficiente")
+                }
+
+                break;
+
+            case 2:
+
+                if (contoCorrente - importo >= 0) {
+                    contoCorrente = contoCorrente - importo;
+
+                    alert("Il prelievo è andato a buon fine, torni a trovarci")
+                } else {
+                    alert("Saldo insufficiente")
+                }
+
+                break;
+
+            default:
+                alert("L'operazione non è supportata")
+                break;
+        }
+    </script>
+
+
+
+
+
+    <script>
+
+        let magazzino = 100
+
+        let scelta = parseInt(prompt ("BENVENUTO ALLE DELIZIE DEL FORNO \n\n N.1 Panini \n\n N.2 Pane \n\n N.3 Integrale "))
+
+        let compra = parseInt(prompt("PEZZI CHE DESIDERA COMPRARE"))
+
+        switch (scelta) {
+            case 1:
+
+            if (magazzino-compra >=0) {
+
+                magazzino=magazzino-compra
+
+                window.alert("ARRIVEDERCI E GRAZIE");
+
+                window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+
+
+                
+            } else {
+
+                alert("Quantità non disponibile")
+                
+            }
+
+            case 2:
+
+if (magazzino-compra >=0) {
+
+    magazzino=magazzino-compra
+
+    window.alert("Torni a trovarci");
+
+    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+
+
+    
+} else {
+
+    alert("Quantità non disponibile")
+    
+}
+
+case 3:
+
+if (magazzino-compra >=0) {
+
+    magazzino=magazzino-compra
+
+    window.alert("BUONA MANGIATA");
+
+    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+    
+} else {
+
+    alert("Quantità non disponibile")
+    
+}
+
+            
+                
+                break;
+        
+            default:
+
+            alert("L'operazione non è supportata")
+                break;
+        }
+
+
+    </script>
+
+
+
+<!--ESERCITAZIONE DEL 16-11-2023-->
+
+<script>
+
+const array1 = ["Alessio" , "Umberto", "Angelo" ,"Roberta", "Viola"]
+
+for (const element of array1) {
+
+    console.log (element);
+}
+
+
+
+</script>
+
+    
+
+
+
+<script src="esercitazione.js"></script>
+
+
+
+    
+</body>
+</html>
